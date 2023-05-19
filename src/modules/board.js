@@ -1,8 +1,8 @@
 import { postData, getData } from './appi';
 
-function Score(playerScore, PlayerName) {
-  this.score = playerScore;
-  this.name = PlayerName;
+function Score(score, name) {
+  this.score = score;
+  this.user = name;
 }
 
 export default class Board {
@@ -20,7 +20,7 @@ export default class Board {
       this.scores = scores;
     }
 
-    displayScore = () => {
+    displayScores = () => {
       const scoreBoard = document.querySelector('.scores');
       scoreBoard.innerHTML = '';
       this.scores.forEach((score) => {

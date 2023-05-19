@@ -19,7 +19,7 @@ scoreForm.addEventListener('submit', (e) => {
 
 const relaodSocre = async () => {
   await board.getScores();
-  board.displayScore();
+  board.displayScores();
 };
 
 refresh.addEventListener('click', () => {

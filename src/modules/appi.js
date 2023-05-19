@@ -11,16 +11,17 @@ export const getData = async () => {
 };
 
 export const postData = async (score) => {
-  try {
-    const result = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(score),
-    });
-    return result;
-  } catch (error) {
-    return error;
-  }
-};
+    try {
+      const results = await fetch(url, {
+        method: 'POST',
+  
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(score),
+      });
+      return results;
+    } catch (error) {
+      return error;
+    }
+  };
