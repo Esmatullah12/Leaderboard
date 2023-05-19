@@ -3,7 +3,7 @@ import { postData, getData } from './appi';
 const Score = (score, name) => {
   this.score = score;
   this.user = name;
-}
+};
 
 export default class Board {
   constructor() {
