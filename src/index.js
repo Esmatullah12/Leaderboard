@@ -1,30 +1,31 @@
 import './style.css';
 import Board from './modules/board';
+
 const board = new Board();
 
-const scoreForm = document.querySelector(".score-from")
-const name = document.getElementById("name")
-const score = document.getElementById("score")
-const refresh = document.querySelector(".refresh-btn")
+const scoreForm = document.querySelector('.score-from');
+const name = document.getElementById('name');
+const score = document.getElementById('score');
+const refresh = document.querySelector('.refresh-btn');
 
-scoreForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const playerName = name.value;
-    const playerScore = score.value;
-    board.addPlayerScore(playerScore, playerName)
-    name.value = '';
-    score.value = '';
-})
+scoreForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const playerName = name.value;
+  const playerScore = score.value;
+  board.addPlayerScore(playerScore, playerName);
+  name.value = '';
+  score.value = '';
+});
 
-const relaodSocre = async () =>{
-    await board.getScores();
-    board.displayScore();
+const relaodSocre = async () => {
+  await board.getScores();
+  board.displayScore();
 };
 
-refresh.addEventListener("click", () =>{
-    relaodSocre();
-})
+refresh.addEventListener('click', () => {
+  relaodSocre();
+});
 
 window.onload = async () => {
-    relaodSocre();
-}
+  relaodSocre();
+};
