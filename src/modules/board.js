@@ -1,6 +1,6 @@
 import { postData, getData } from './appi';
 
-function Score(score, name) {
+const Score = (score, name) => {
   this.score = score;
   this.user = name;
 }
