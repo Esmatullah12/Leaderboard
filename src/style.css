@@ -33,3 +33,7 @@ h1 {
 .add-score button {
   margin-left: 70%;
 }
+
+ul {
+  list-style: none;
+}

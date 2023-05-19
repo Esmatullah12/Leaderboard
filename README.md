@@ -59,7 +59,7 @@ This is a leaderboard Web application. leaderboard is a scoreboard showing the n
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Comming soon
+For checking the live of this project click [here](https://esmatullah12.github.io/Leaderboard/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)
 
