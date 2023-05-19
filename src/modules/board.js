@@ -1,9 +1,9 @@
 import { postData, getData } from './appi';
 
-const Score = (score, name) => {
-  this.score = score;
-  this.user = name;
-};
+const Score = (score, name) => ({
+  score,
+  user: name,
+});
 
 export default class Board {
   constructor() {
@@ -11,7 +11,7 @@ export default class Board {
   }
 
     addPlayerScore = (score, name) => {
-      const newScore = new Score(score, name);
+      const newScore = Score(score, name);
       postData(newScore);
     }
 
@@ -25,7 +25,9 @@ export default class Board {
       scoreBoard.innerHTML = '';
       this.scores.forEach((score) => {
         const scoreElement = document.createElement('li');
-        scoreElement.textContent = `${score.user}:${score.score}`;
+
+        scoreElement.innerHTML = `<p>${score.user}:</p>
+                                    <p>${score.score}</p>`;
         scoreBoard.appendChild(scoreElement);
       });
     }
