@@ -94,6 +94,11 @@ Run This command
 - Twitter: [@twitterhandle](https://twitter.com/Esmatullah173)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/esmatullah-qadeemi-b9951821b/)
 
+## 🔭 Future Features
+- adding tests to application
+- reading random quotes with
+- adding more calculation feature to it
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
